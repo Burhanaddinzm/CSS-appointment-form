@@ -48,8 +48,13 @@ main .input-container {
 main .input-container input,
 main .input-container textarea {
     width: 100%;
-    padding: 10px 20px 10px 30px;
+    padding: 10px 20px 10px 33px;
     font-size: 16px;
+    color: rgb(81,136,141);
+    border: 1px solid rgb(81,136,141);
+    border-radius: 2px;
+    font-family: "Exo 2", sans-serif;
+
 }
 main .input-container img:nth-child(2) {
     position: absolute;
@@ -63,23 +68,24 @@ main .input-container img:nth-child(4) {
 }
 main .input-container img:nth-child(6) {
     position: absolute;
-    top: 120px;
+    top: 119px;
     left: 8px;
 }
 main .input-container img:nth-child(8) {
     position: absolute;
-    top: 175px;
+    top: 173px;
     left: 8px;
 }
 main .input-container img:nth-child(10) {
     position: absolute;
-    top: 228px;
+    top: 225px;
     left: 8px;
 }
 main .input-container textarea{
     resize: vertical;
     min-height: 70px;
     max-height: 300px;
+
 }
 main .input-container input:focus,
 main .input-container textarea:focus{
@@ -95,6 +101,7 @@ main .input-container button{
     border: 1px solid transparent;
     background-color: rgb(132, 173, 177);
     color: #fff;
+    font-family: "Exo 2", sans-serif;
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
