@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Exo 2", sans-serif;
+}
+body {
+  padding: 70px;
+  background-color: azure;
+}
+header {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 20px;
+}
+header h4{
+    color: rgb(81,136,141);
+    font-size: 22px;
+    font-weight: 600;
+}
+header h1{
+    font-size: 34px;
+    font-weight: 700;
+}
+header p{
+    font-weight: 300;
+}
+main {
+  width: 650px;   
+  margin: 80px auto 0;
+  padding: 20px 30px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+main .input-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-bottom: 30px;
+}
+main .input-container input,
+main .input-container textarea {
+    width: 100%;
+    padding: 10px 20px 10px 30px;
+    font-size: 16px;
+}
+main .input-container img:nth-child(2) {
+    position: absolute;
+    top: 13px;
+    left: 8px;
+}
+main .input-container img:nth-child(4) {
+    position: absolute;
+    top: 67px;
+    left: 8px;
+}
+main .input-container img:nth-child(6) {
+    position: absolute;
+    top: 120px;
+    left: 8px;
+}
+main .input-container img:nth-child(8) {
+    position: absolute;
+    top: 175px;
+    left: 8px;
+}
+main .input-container img:nth-child(10) {
+    position: absolute;
+    top: 228px;
+    left: 8px;
+}
+main .input-container textarea{
+    resize: vertical;
+    min-height: 70px;
+    max-height: 300px;
+}
+main .input-container input:focus,
+main .input-container textarea:focus{
+    outline: none;
+}
+
+main .input-container input:focus::placeholder,
+main .input-container textarea:focus::placeholder{
+    opacity: 0;
+}
+main .input-container button{
+    height: 50px;
+    border: 1px solid transparent;
+    background-color: rgb(132, 173, 177);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+main .input-container button:hover{
+    background-color:rgb(114, 155, 159)
+}
+main .input-container button:active{
+    background-color: #fff;
+    color: rgb(114, 155, 159);
+}
+
+main .input-container button:disabled{
+    opacity: 0.5;
+    background-color: rgb(132, 173, 177);
+}
